@@ -117,7 +117,7 @@
     </div>
 
     <!-- Questions Form -->
-    <form action="/submit" method="post" id="quizForm">
+    <form action="<?php echo base_url('submit')?>" method="post" id="quizForm">
         <?php foreach ($questions as $question): ?>
             <div class="panel panel-default">
                 <div class="panel-heading text-white"><?= $question['q_text'] ?></div>

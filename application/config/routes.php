@@ -55,9 +55,10 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 // User Routers
-$route['login'] = 'TestController/processForm';
-$route['submit'] = 'TestController/submit';
-$route['logout'] = 'TestController/logout';
+$route['TestController'] = 'TestController';
+$route['login'] = $route['TestController'].'/processForm';
+$route['submit'] = $route['TestController'].'/submit';
+$route['logout'] = $route['TestController'].'/logout';
 
 // Admin Routers
 $route['admin'] = 'AdminController';

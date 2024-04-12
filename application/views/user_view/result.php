@@ -81,7 +81,7 @@
 
     <p>Thank you for taking the quiz. Further round information goes here.</p>
     
-    <form action="/logout" method="post">
+    <form action="<?php echo base_url('logout')?>" method="post">
         <button type="submit" class="btn btn-danger btn-block">Logout</button>
     </form>
 </div>

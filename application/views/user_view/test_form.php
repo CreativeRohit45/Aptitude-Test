@@ -113,7 +113,7 @@
 
     <div class="container">
         <h2>Test Form</h2>
-        <form action="/login" method="post">
+        <form action="<?php echo base_url('login')?>" method="post">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name"
