@@ -84,7 +84,7 @@
 
 <div class="content">
     <h2>Edit Role</h2>
-    <form action="/editRole/<?php echo $role['role_id']; ?>" method="post">
+    <form action="<?php echo base_url('editRole/' . $role['role_id']); ?>" method="post">
         <input type="hidden" name="role_id" value="<?php echo isset($role['role_id']) ? $role['role_id'] : ''; ?>">
 
         <label for="role_name">Role Name:</label>

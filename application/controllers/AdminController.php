@@ -7,10 +7,6 @@ class AdminController extends CI_Controller {
         parent::__construct();
         $this->load->model('AdminModel');
     }
-
-	public function index(){
-		$this->load->view('admin_login');
-	}
 	
 	public function login() {
 		// Set validation rules

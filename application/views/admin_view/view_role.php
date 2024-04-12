@@ -117,7 +117,7 @@
 <div class="content">
     <h2>Roles List</h2>
     <!-- Button to add a new role -->
-    <a href="/addRole" class="add-btn">Add Role</a>
+    <a href="<?php echo base_url('addRole')?>" class="add-btn">Add Role</a>
     <!-- Display roles in a table -->
     <table>
         <thead>
@@ -133,8 +133,8 @@
         <td><?php echo isset($role->role_id) ? $role->role_id : ''; ?></td>
         <td><?php echo isset($role->role_name) ? $role->role_name : ''; ?></td>
         <td>
-            <a href="/editRole/<?php echo $role->role_id ?>" class="edit">Edit</a>
-            <a href="/deleteRole/<?php echo $role->role_id ?>" class="delete" onclick="return confirm('Are you sure you want to delete this role?')">Delete</a>
+            <a href="<?php echo base_url('editRole/' . $role->role_id) ?>" class="edit">Edit</a>
+            <a href="<?php echo base_url('deleteRole/' . $role->role_id) ?>" class="delete" onclick="return confirm('Are you sure you want to delete this role?')">Delete</a>
         </td>
     </tr>
 <?php endforeach; ?>

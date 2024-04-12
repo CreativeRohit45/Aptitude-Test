@@ -85,7 +85,7 @@
     <div class="container">
         <h2>Status Update</h2>
         <div class="form-container">
-        <form action="/updateStatus" method="post">
+        <form action="<?php echo base_url('updateStatus')?>" method="post">
             <!-- Use the directly from POST data -->
             <input type="hidden" name="id" value="<?php echo isset($_POST['id']) ? $_POST['id'] : ''; ?>">
 

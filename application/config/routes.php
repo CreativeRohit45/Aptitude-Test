@@ -61,15 +61,15 @@ $route['submit'] = $route['TestController'].'/submit';
 $route['logout'] = $route['TestController'].'/logout';
 
 // Admin Routers
-$route['admin'] = 'AdminController';
-$route['adminlogin'] = 'AdminController/login';
-$route['adminView'] = 'AdminController/adminView';
-$route['adminView/(:any)'] = 'AdminController/adminView';
-$route['viewRole'] = 'AdminController/viewRole';
-$route['addRole'] = 'AdminController/addRole';
-$route['editRole/(:num)'] = 'AdminController/editRole/$1';
-$route['deleteRole/(:num)'] = 'AdminController/deleteRole/$1';
-$route['addPaper'] = 'AdminController/addQuestionPaper';
-$route['deleteUser'] = 'AdminController/deleteUser';
-$route['updateStatus'] = 'AdminController/updateStatus';
-$route['adminlogout'] = 'AdminController/logout';
+$route['AdminController'] = 'AdminController';
+$route['adminlogin'] = $route['AdminController'].'/login';
+$route['adminView'] = $route['AdminController'].'/adminView';
+$route['adminView/(:any)'] = $route['AdminController'].'/adminView';
+$route['viewRole'] = $route['AdminController'].'/viewRole';
+$route['addRole'] = $route['AdminController'].'/addRole';
+$route['editRole/(:num)'] = $route['AdminController'].'/editRole/$1';
+$route['deleteRole/(:num)'] = $route['AdminController'].'/deleteRole/$1';
+$route['addPaper'] = $route['AdminController'].'/addQuestionPaper';
+$route['deleteUser'] = $route['AdminController'].'/deleteUser';
+$route['updateStatus'] = $route['AdminController'].'/updateStatus';
+$route['adminlogout'] = $route['AdminController'].'/logout';

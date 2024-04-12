@@ -92,7 +92,7 @@
 
 <div class="content">
     <h2>Add New Role</h2>
-    <form action="/addRole" method="post">
+    <form action="<?php echo base_url('addRole')?>" method="post">
         <label for="role_id">Role ID:</label>
         <input type="text" id="role_id" name="role_id" required>
 

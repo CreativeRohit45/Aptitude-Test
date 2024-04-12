@@ -86,7 +86,7 @@
             <h2>Admin Login</h2>
         </div>
         <div class="login-form">
-        <form action="/app/adminlogin" method="post">
+        <form action="<?php echo base_url('adminlogin')?>" method="post">
                 <label for="admin_name">Admin Email:</label>
                 <input type="admin_name" name="admin_name" value="<?php echo set_value('admin_name'); ?>" required>
                 <label for="admin_password">Password:</label>

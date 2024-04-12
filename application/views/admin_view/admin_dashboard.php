@@ -198,7 +198,7 @@
 </style>
 
 <div class="option">
-    <form method="post" action="/app/adminView">
+    <form method="post" action="<?php echo base_url('adminView')?>">
         <label for="order">Select Order:</label>
         <select name="order" id="order">
             <option value="asc" <?php if ($order === 'asc') echo 'selected'; ?>>Ascending</option>
@@ -247,11 +247,11 @@
                             3: <?php echo !empty($data['status']) ? $data['status'] : 'No status'; ?>
                         </td>
                         <td>
-                            <form action="/updateStatus" method="post">
+                            <form action="<?php echo base_url('updateStatus')?>" method="post">
                                 <input type="hidden" name="id" value="<?php echo $data['id']; ?>">
                                 <button type="submit" class="update-button">Update Status</button>
                             </form>
-                            <form action="/deleteUser" method="post" onsubmit="return confirm('Are you sure you want to delete this user?');">
+                            <form action="<?php echo base_url('deleteUser')?>" method="post" onsubmit="return confirm('Are you sure you want to delete this user?');">
                                 <input type="hidden" name="id" value="<?php echo $data['id']; ?>">
                                 <button type="submit" class="delete-button">Delete</button>
                             </form>

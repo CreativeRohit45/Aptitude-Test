@@ -157,9 +157,9 @@
     <nav class="navbar">
     <div class="hamburger-menu">&#9776;</div>
         <ul class="nav-list">
-            <li <?php if ($active_tab == 'home') echo 'class="active"'; ?>><a href="/adminView">Home</a></li>
-            <li <?php if ($active_tab == 'view_roles') echo 'class="active"'; ?>><a href="/viewRole">View Roles</a></li>
-            <li <?php if ($active_tab == 'add_question_paper') echo 'class="active"'; ?>><a href="/addPaper">Add Question Paper</a></li>
+            <li <?php if ($active_tab == 'home') echo 'class="active"'; ?>><a href="<?php echo base_url('adminView')?>">Home</a></li>
+            <li <?php if ($active_tab == 'view_roles') echo 'class="active"'; ?>><a href="<?php echo base_url('viewRole')?>">View Roles</a></li>
+            <li <?php if ($active_tab == 'add_question_paper') echo 'class="active"'; ?>><a href="<?php echo base_url('addPaper')?>">Add Question Paper</a></li>
             <div class="logout"><a href="/adminlogout">Logout</a></div>
         </ul>   
     </nav>

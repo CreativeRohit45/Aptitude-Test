@@ -89,7 +89,7 @@
 
 <div class="content">
     <h2>Add Question Paper</h2>
-    <form action="/addPaper" method="post" enctype="multipart/form-data">
+    <form action="<?php echo base_url('addPaper')?>" method="post" enctype="multipart/form-data">
         <label for="role">Select Role:</label>
         <select id="role" name="role" required>
             <?php foreach ($roles as $role): ?>
